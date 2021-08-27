@@ -1,0 +1,146 @@
+
+/*SELECTORES DE NOMBRE*/
+html{
+  font-family: 'Nunito', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #d500f9;
+}
+td{
+  display: block;
+  width: 100%;
+}
+th{
+  display: none;
+}
+
+
+/*SELECTORES DE CLASE*/
+.container{
+  background: #ec008c;
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.content{
+  max-width: 960px;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+  padding: 1em
+  }
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.title-item{
+  border-bottom: solid 2px #ad1457;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+.address{
+  font-weight: bold;
+  color: #880e4f;
+  margin-top: 2em;
+  display: inline-block;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
+  width: 400px;
+  height: 250px;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, th{
+  padding: 1em;
+  text-align: left;
+}
+
+.position{
+  background-color: #ad1457;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close{
+  width: 40px;
+  height: 40px;
+  background-color: #880e4f;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-star, .fa-star-half-alt{
+  color: #ffc400;
+}
+
+
+/*PSEUDOCLASE*/
+a:hover{
+  opacity: 0.7;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #880e4f;
+}
+.table tr:nth-child(even){
+  background-color: #fce4ec;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: 960px;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+    color: black;
+  }
+  .content{
+    padding: 1.8em;
+    overflow: auto;
+  }
+}
+
+@media (min-height: 550px) {
+  .content{
+    height: 500px;
+      }
+}
